@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Sistemas de ecuaciones 2×2 · Aprende y juega</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <span class="eyebrow">AULA INTERACTIVA · ÁLGEBRA</span>
+        <h1>Sistemas de ecuaciones 2×2</h1>
+        <p class="subtitle">Aprende, practica y resuelve cada reto a tu ritmo.</p>
+      </div>
+      <div class="progress-card">
+        <div id="lv"></div>
+        <div class="xp"><i id="xb"></i></div>
+      </div>
+    </header>
+    <nav id="nav">
+      <button data-t="learn" onclick="go('learn')">📖 Aprende</button>
+      <button data-t="prac" onclick="go('prac')">✏️ Practica</button>
+      <button data-t="game" onclick="go('game')">🎮 Reto</button>
+      <button data-t="prob" onclick="go('prob')">🧩 Problemas</button>
+    </nav>
+    <main id="app"></main>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
