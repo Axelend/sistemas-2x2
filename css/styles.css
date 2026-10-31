@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #310ade;
+  --bg: #f4faf7;
   --card: #fff;
   --tx: #18352b;
   --mut: #60766d;
   --ac: #087f5b;
   --ac-dark: #066747;
   --on: #fff;
-  --ok: #168452;
-  --bad: #c64d48;
+  --ok: #ff0000;
+  --bad: #5500ff;
   --bd: #d9e9e0;
   --hi: #fff7df;
   --shadow: 0 12px 32px rgb(31 91 65 / 8%);
