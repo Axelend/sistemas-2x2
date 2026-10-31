@@ -1,21 +1,53 @@
 :root {
-  color-scheme: light;
-  --bg: #f4faf7;
-  --card: #fff;
-  --tx: #18352b;
-  --mut: #60766d;
-  --ac: #087f5b;
-  --ac-dark: #066747;
-  --on: #fff;
-  --ok: #ff0000;
-  --bad: #5500ff;
-  --bd: #d9e9e0;
-  --hi: #fff7df;
-  --shadow: 0 12px 32px rgb(31 91 65 / 8%);
-  box-sizing: border-box;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
+        color-scheme: light;
+        --bg: #f3f6fc;
+        --card: #fff;
+        --tx: #17233c;
+        --mut: #68758d;
+        --ac: #4f62d9;
+        --ac-dark: #394cc4;
+        --on: #fff;
+        --ok: #16845b;
+        --bad: #c4444e;
+        --bd: #e2e8f2;
+        --hi: #fff7df;
+        --shadow: 0 12px 32px rgb(34 51 84 / 7%);
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          color-scheme: dark;
+          --bg: #111827;
+          --card: #1a2435;
+          --tx: #eef2ff;
+          --mut: #a7b3ca;
+          --ac: #8b9bff;
+          --ac-dark: #aab5ff;
+          --on: #151a2b;
+          --ok: #68d5a5;
+          --bad: #ff9299;
+          --bd: #303d53;
+          --hi: #342f22;
+          --shadow: 0 14px 36px rgb(0 0 0 / 20%);
+        }
+      }
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --bg: #111827;
+        --card: #1a2435;
+        --tx: #eef2ff;
+        --mut: #a7b3ca;
+        --ac: #8b9bff;
+        --ac-dark: #aab5ff;
+        --on: #151a2b;
+        --ok: #68d5a5;
+        --bad: #ff9299;
+        --bd: #303d53;
+        --hi: #342f22;
+        --shadow: 0 14px 36px rgb(0 0 0 / 20%);
+      }
       html {
         scroll-padding-top: env(safe-area-inset-top, 0px);
       }
@@ -30,8 +62,7 @@
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(ellipse at 12% -18%, rgb(8 127 91 / 12%), transparent 42%),
-          radial-gradient(ellipse at 95% 4%, rgb(255 205 92 / 13%), transparent 28%),
+          radial-gradient(ellipse at 50% -18%, rgb(101 120 231 / 14%), transparent 48%),
           var(--bg);
         color: var(--tx);
         font:
@@ -67,6 +98,18 @@
         margin: 8px 0 0;
         color: var(--mut);
         font-size: 0.96rem;
+      }
+      .connection-test {
+        display: inline-block;
+        margin: 4px 0 0 6px;
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: #ffe08a;
+        color: #483600;
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.045em;
+        vertical-align: middle;
       }
       .progress-card {
         flex: 0 0 min(240px, 38%);
@@ -135,7 +178,7 @@
       button:hover {
         background: var(--ac-dark);
         border-color: var(--ac-dark);
-        box-shadow: 0 5px 14px rgb(8 127 91 / 20%);
+        box-shadow: 0 5px 14px rgb(79 98 217 / 18%);
         transform: translateY(-1px);
       }
       button:active {
@@ -169,7 +212,7 @@
         background: var(--ac);
         color: var(--on);
         border-color: var(--ac);
-        box-shadow: 0 6px 16px rgb(8 127 91 / 22%);
+        box-shadow: 0 6px 16px rgb(79 98 217 / 20%);
       }
       .card {
         background: var(--card);
