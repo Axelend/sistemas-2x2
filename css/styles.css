@@ -4,8 +4,8 @@
         --card: #fff;
         --tx: #17233c;
         --mut: #68758d;
-        --ac: #0057ff;
-        --ac-dark: #0042cc;
+        --ac: #087f5b;
+        --ac-dark: #066747;
         --on: #fff;
         --ok: #16845b;
         --bad: #c4444e;
@@ -30,7 +30,7 @@
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(ellipse at 50% -18%, rgb(0 87 255 / 12%), transparent 48%),
+          radial-gradient(ellipse at 50% -18%, rgb(8 127 91 / 12%), transparent 48%),
           var(--bg);
         color: var(--tx);
         font:
@@ -134,7 +134,7 @@
       button:hover {
         background: var(--ac-dark);
         border-color: var(--ac-dark);
-        box-shadow: 0 5px 14px rgb(0 87 255 / 22%);
+        box-shadow: 0 5px 14px rgb(8 127 91 / 22%);
         transform: translateY(-1px);
       }
       button:active {
@@ -168,7 +168,7 @@
         background: var(--ac);
         color: var(--on);
         border-color: var(--ac);
-        box-shadow: 0 6px 16px rgb(0 87 255 / 24%);
+        box-shadow: 0 6px 16px rgb(8 127 91 / 24%);
       }
       .card {
         background: var(--card);
