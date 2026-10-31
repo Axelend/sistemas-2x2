@@ -16,38 +16,6 @@
         padding-top: env(safe-area-inset-top, 0px);
         padding-bottom: env(safe-area-inset-bottom, 0px);
       }
-      @media (prefers-color-scheme: dark) {
-        :root:not([data-theme="light"]) {
-          color-scheme: dark;
-          --bg: #111827;
-          --card: #1a2435;
-          --tx: #eef2ff;
-          --mut: #a7b3ca;
-          --ac: #8b9bff;
-          --ac-dark: #aab5ff;
-          --on: #151a2b;
-          --ok: #68d5a5;
-          --bad: #ff9299;
-          --bd: #303d53;
-          --hi: #342f22;
-          --shadow: 0 14px 36px rgb(0 0 0 / 20%);
-        }
-      }
-      :root[data-theme="dark"] {
-        color-scheme: dark;
-        --bg: #111827;
-        --card: #1a2435;
-        --tx: #eef2ff;
-        --mut: #a7b3ca;
-        --ac: #8b9bff;
-        --ac-dark: #aab5ff;
-        --on: #151a2b;
-        --ok: #68d5a5;
-        --bad: #ff9299;
-        --bd: #303d53;
-        --hi: #342f22;
-        --shadow: 0 14px 36px rgb(0 0 0 / 20%);
-      }
       html {
         scroll-padding-top: env(safe-area-inset-top, 0px);
       }
