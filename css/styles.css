@@ -1,17 +1,17 @@
 :root {
-        color-scheme: dark;
-        --bg: #101815;
-        --card: #18241f;
-        --tx: #edf6f1;
-        --mut: #a8bbb0;
-        --ac: #45c98b;
-        --ac-dark: #65daa3;
-        --on: #092016;
-        --ok: #65daa3;
-        --bad: #ff9292;
-        --bd: #304139;
-        --hi: #29362e;
-        --shadow: 0 14px 36px rgb(0 0 0 / 24%);
+        color-scheme: light;
+        --bg: #f3f7fd;
+        --card: #ffffff;
+        --tx: #172b4d;
+        --mut: #60738b;
+        --ac: #2563eb;
+        --ac-dark: #1d4ed8;
+        --on: #ffffff;
+        --ok: #16804a;
+        --bad: #c53030;
+        --bd: #d7e2f0;
+        --hi: #eaf2ff;
+        --shadow: 0 14px 36px rgb(31 70 120 / 10%);
         box-sizing: border-box;
         padding-top: env(safe-area-inset-top, 0px);
         padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -30,7 +30,7 @@
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(ellipse at 50% -18%, rgb(69 201 139 / 13%), transparent 48%),
+          radial-gradient(ellipse at 50% -18%, rgb(37 99 235 / 12%), transparent 48%),
           var(--bg);
         color: var(--tx);
         font:
@@ -134,7 +134,7 @@
       button:hover {
         background: var(--ac-dark);
         border-color: var(--ac-dark);
-        box-shadow: 0 5px 14px rgb(69 201 139 / 22%);
+        box-shadow: 0 5px 14px rgb(37 99 235 / 20%);
         transform: translateY(-1px);
       }
       button:active {
@@ -168,7 +168,7 @@
         background: var(--ac);
         color: var(--on);
         border-color: var(--ac);
-        box-shadow: 0 6px 16px rgb(69 201 139 / 24%);
+        box-shadow: 0 6px 16px rgb(37 99 235 / 22%);
       }
       .card {
         background: var(--card);
